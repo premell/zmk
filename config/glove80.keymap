@@ -56,6 +56,24 @@
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <69>;
         };
+
+        next_window_K: next_window_K {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NEXT_WINDOW_K";
+            bindings = <&kp K>, <&alt_tab>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        previous_window_J: previous_window_J {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PREVIOUS_WINDOW_J";
+            bindings = <&kp J>, <&shift_alt_tab>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     macros {
@@ -89,6 +107,20 @@
             bindings = <&kp DOT &kp SPACE &sk LEFT_SHIFT>;
             label = "SENTENCE_END";
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp TAB>;
+            label = "ALT_TAB";
+        };
+
+        shift_alt_tab: shift_alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp TAB>;
+            label = "SHIFT_ALT_TAB";
+        };
     };
 
     keymap {
@@ -104,12 +136,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1     &kp F2        &kp F3   &kp F4    &kp F5                                                                                                                        &kp F6  &kp F9    &kp F10   &kp F11          &kp F12
-&kp EQUAL  &kp NUMBER_1  &kp N2   &kp N3    &kp N4     &kp N5                                                                                          &kp N6             &kp N7  &kp N8    &kp N9    &kp N0           &kp MINUS
-&kp TAB    &kp B         &kp L    &kp D     &kp W      &kp Z                                                                                           &kp SV_A_RING      &kp U   &kp I     &kp O     &kp SV_O_UMLAUT  &kp BSLH
-&kp ESC    &kp N         &kp R    &kp T     &kp S      &kp G                                                                                           &kp Y              &kp H   &kp A     &kp E     &kp L            &kp COMMA
-&kp GRAVE  &kp Q         &kp X    &kp M     &kp C      &kp V   &kp LSHFT           &kp LCTRL         &layer_td    &kp LGUI  &kp RCTRL       &kp RSHFT  &dot_sentence_end  &kp P   &kp J     &kp K     &kp SV_A_UMLAUT  &kp PG_UP
-&mo 3      &kp HOME      &kp END  &kp LEFT  &kp RIGHT          &backspace_nav 2 0  &kp LEFT_CONTROL  &kp LALT     &kp RALT  &kp LEFT_SHIFT  &kp SPACE                     &kp UP  &kp DOWN  &kp LBKT  &kp RBKT         &kp PG_DN
+&kp F1            &kp F2        &kp F3         &kp F4       &kp F5                                                                                                                               &kp F6     &kp F9    &kp F10   &kp F11          &kp F12
+&kp EXCL          &kp NUMBER_1  &kp N2         &kp N3       &kp N4   &kp N5                                                                                                   &kp N6             &kp N7     &kp N8    &kp N9    &kp N0           &kp MINUS
+&kp QUESTION      &kp B         &kp L          &kp D        &kp W    &kp Z                                                                                                    &kp SV_A_RING      &kp U      &kp I     &kp O     &kp SV_O_UMLAUT  &kp EQUAL
+&kp ESC           &kp N         &kp R          &kp T        &kp S    &kp G                                                                                                    &kp Y              &kp H      &kp A     &kp E     &kp L            &kp COMMA
+&kp SINGLE_QUOTE  &kp Q         &kp X          &kp M        &kp C    &kp V   &kp TAB             &kp DOWN          &kp UP          &kp LEFT_ARROW  &kp RIGHT       &kp ENTER  &dot_sentence_end  &kp P      &kp J     &kp K     &kp SV_A_UMLAUT  &kp SEMI
+&mo 0             &kp HOME      &kp PAGE_DOWN  &kp PAGE_UP  &kp END          &backspace_nav 2 0  &kp LEFT_CONTROL  &kp LEFT_WIN    &kp LEFT_ALT    &kp LEFT_SHIFT  &kp SPACE                     &kp SLASH  &kp DOWN  &kp LBKT  &none            &none
             >;
         };
 
@@ -135,7 +167,7 @@
             >;
         };
 
-        magic_layer {
+        MAGIC_LAYER {
             bindings = <
 &bt BT_CLR   &none            &none            &none            &none                                                                                       &none  &none  &none  &none  &none
 &none        &none            &none            &none            &none            &none                                                               &none  &none  &none  &none  &none  &none
