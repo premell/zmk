@@ -130,6 +130,27 @@
             bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp TAB>;
             label = "SHIFT_ALT_TAB";
         };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp C>;
+            label = "COPY";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp X>;
+            label = "CUT";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp V>;
+            label = "PASTE";
+        };
     };
 
     keymap {
