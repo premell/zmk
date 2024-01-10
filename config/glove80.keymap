@@ -151,6 +151,20 @@
             bindings = <&kp LCTRL &kp V>;
             label = "PASTE";
         };
+
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp Z>;
+            label = "UNDO";
+        };
+
+        redo: redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp Y>;
+            label = "REDO";
+        };
     };
 
     keymap {
