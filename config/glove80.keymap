@@ -165,6 +165,20 @@
             bindings = <&kp LCTRL &kp Y>;
             label = "REDO";
         };
+
+        next_workspace: next_workspace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_WIN &kp RIGHT>;
+            label = "NEXT_WORKSPACE";
+        };
+
+        previous_workspace: previous_workspace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT_ARROW>;
+            label = "PREVIOUS_WORKSPACE";
+        };
     };
 
     keymap {
@@ -202,12 +216,12 @@
 
         NAVIGATION {
             bindings = <
-&kp  &kp           &kp           &kp        &kp                                                       &kp             &kp             &kp       &kp        &kp
-&kp  &kp           &kp           &kp        &kp             &kp                                  &kp  &kp             &kp             &kp       &kp        &kp
-&kp  &kp           &kp           &kp        &kp             &kp                                  &kp  &kp             &kp             &kp       &kp        &kp
-&kp  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp                                  &kp  &kp LEFT_ARROW  &kp DOWN        &kp UP    &kp RIGHT  &kp
-&kp  &kp           &kp           &kp        &kp             &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp             &shift_alt_tab  &alt_tab  &kp        &kp
-&kp  &kp           &kp           &kp        &kp                  &kp  &kp  &kp    &kp  &kp  &kp       &kp             &kp             &kp       &kp        &kp
+&kp  &kp           &kp           &kp        &kp                                                          &kp             &kp             &kp          &kp        &kp
+&kp  &kp           &kp           &kp        &kp             &kp                                     &kp  &kp             &kp             &kp          &kp        &kp
+&kp  &kp           &kp           &kp        &kp BACKSPACE   &cut                                    &kp  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP  &kp END    &kp
+&kp  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &copy                                   &kp  &kp LEFT_ARROW  &kp DOWN        &kp UP       &kp RIGHT  &kp
+&kp  &kp           &kp           &kp        &kp             &paste  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp HOME        &shift_alt_tab  &alt_tab     &kp        &kp
+&kp  &kp           &kp           &kp        &kp                     &kp  &kp  &kp    &kp  &kp  &kp       &kp             &kp             &kp          &kp        &kp
             >;
         };
 
