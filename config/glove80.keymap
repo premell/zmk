@@ -188,12 +188,12 @@
 
         NAVIGATION {
             bindings = <
-&trans  &trans        &trans        &trans     &trans                                                                            &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans     &trans          &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans     &trans          &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans     &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans     &trans                  &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp  &kp           &kp           &kp        &kp                                                       &kp  &kp  &kp  &kp  &kp
+&kp  &kp           &kp           &kp        &kp             &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp           &kp           &kp        &kp             &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp           &kp           &kp        &kp             &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp           &kp           &kp        &kp                  &kp  &kp  &kp    &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
             >;
         };
 
