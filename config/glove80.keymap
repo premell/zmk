@@ -83,6 +83,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        parenthesis_previous_tab: parenthesis_previous_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARENTHESIS_PREVIOUS_TAB";
+            bindings = <&kp LPAR>, <&previous_tab>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        parenthesis_next_tab: parenthesis_next_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARENTHESIS_NEXT_TAB";
+            bindings = <&kp RPAR>, <&next_tab>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
