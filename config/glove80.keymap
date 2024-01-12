@@ -179,6 +179,20 @@
             bindings = <&kp LCTRL &kp LEFT_WIN &kp LEFT_ARROW>;
             label = "PREVIOUS_WORKSPACE";
         };
+
+        next_tab: next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp TAB>;
+            label = "NEXT_TAB";
+        };
+
+        previous_tab: previous_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_SHIFT &kp TAB>;
+            label = "PREVIOUS_TAB";
+        };
     };
 
     keymap {
