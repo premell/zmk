@@ -126,7 +126,7 @@
             bindings = <&kp LPAR>, <&kp LBKT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LCTL|MOD_LSFT)>;
         };
 
         right_paren_bracket: right_paren_bracket {
@@ -135,7 +135,7 @@
             bindings = <&kp RPAR>, <&kp RBKT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
 
         left_brace_croco: left_brace_croco {
@@ -144,7 +144,7 @@
             bindings = <&kp LBRC>, <&kp LT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
 
         right_brace_croco: right_brace_croco {
@@ -153,7 +153,7 @@
             bindings = <&kp RBRC>, <&kp GT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
     };
 
@@ -291,12 +291,12 @@
 
         SYMBOL {
             bindings = <
-&kp  &kp  &kp  &kp  &kp                                            &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp       &kp  &kp  &kp    &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
+&kp  &kp        &kp        &kp       &kp                                                  &kp  &kp  &kp  &kp  &kp
+&kp  &kp        &kp        &kp       &kp        &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp        &kp        &kp       &kp        &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp POUND  &kp CARET  &kp DLLR  &kp ASTRK  &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp        &kp        &kp       &kp        &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp        &kp        &kp       &kp             &kp  &kp  &kp    &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
             >;
         };
 
