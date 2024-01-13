@@ -101,6 +101,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        comma_exclemation: comma_exclemation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_EXCLEMATION";
+            bindings = <&kp COMMA>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
