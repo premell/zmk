@@ -302,12 +302,12 @@
 
         NAVIGATION {
             bindings = <
-&none  &none         &none         &none      &none                                                                      &none                &none           &none         &none            &none
-&none  &none         &none         &none      &none           &none                                               &none  &none                &none           &none         &none            &none
-&none  &none         &undo         &redo      &kp BACKSPACE   &cut                                                &none  &kp HOME             &previous_tab   &next_tab     &kp END          &none
-&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &copy                                               &none  &previous_workspace  &shift_alt_tab  &alt_tab      &next_workspace  &none
-&none  &none         &none         &none      &none           &paste  &none  &none  &none    &none  &none  &none  &none  &kp LEFT_ARROW       &kp DOWN        &kp UP_ARROW  &kp RIGHT        &none
-&none  &none         &none         &none      &none                   &none  &none  &none    &none  &none  &none         &none                &none           &none         &none            &none
+&none  &none         &none         &none      &none                                                                       &none                &none           &none         &none            &none
+&none  &none         &none         &none      &none           &none                                                &none  &none                &none           &none         &none            &none
+&none  &none         &undo         &redo      &kp BACKSPACE   &cut                                                 &none  &kp HOME             &previous_tab   &next_tab     &kp END          &none
+&none  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &copy                                                &none  &previous_workspace  &shift_alt_tab  &alt_tab      &next_workspace  &none
+&none  &none         &none         &none      &none           &paste  &none  &none  &none    &none  &none  &trans  &none  &kp LEFT_ARROW       &kp DOWN        &kp UP_ARROW  &kp RIGHT        &none
+&none  &none         &none         &none      &none                   &none  &none  &none    &none  &none  &trans         &none                &none           &none         &none            &none
             >;
         };
 
