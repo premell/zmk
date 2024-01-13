@@ -44,7 +44,7 @@
             bindings = <&kp DOT>, <&sentence_end>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_LCTL)>;
         };
 
         backspace_nav: backspace_nav {
