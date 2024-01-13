@@ -53,8 +53,12 @@
             bindings = <&mo>, <&ctrl_backspace>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
             hold-trigger-key-positions = <69>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
         };
 
         next_window_K: next_window_K {
