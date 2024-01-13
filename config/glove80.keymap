@@ -291,12 +291,12 @@
 
         SYMBOL {
             bindings = <
-&kp  &kp        &kp        &kp       &kp                                                  &kp  &kp  &kp  &kp  &kp
-&kp  &kp        &kp        &kp       &kp        &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp        &kp        &kp       &kp        &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp POUND  &kp CARET  &kp DLLR  &kp ASTRK  &kp                                  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp        &kp        &kp       &kp        &kp  &kp  &kp  &kp    &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp        &kp        &kp       &kp             &kp  &kp  &kp    &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
+&kp        &kp        &kp        &kp             &kp                                                                               &kp             &kp                 &kp           &kp           &kp
+&kp        &kp GRAVE  &kp LPAR   &kp RPAR        &kp SEMI    &kp COMMA                                                     &kp     &kp             &kp                 &kp           &kp           &kp
+&kp EXCL   &kp LBRC   &kp APOS   &kp DQT         &kp RBRC    &kp QMARK                                                     &kp     &kp LEFT_SHIFT  &kp LCTRL           &kp LEFT_ALT  &kp LEFT_WIN  &trans
+&kp POUND  &kp CARET  &kp EQUAL  &kp UNDERSCORE  &kp DOLLAR  &kp STAR                                                      &kp     &kp BACKSPACE   &kp SPACE           &kp TAB       &kp ENTER     &trans
+&kp TILDE  &kp LT     &kp PIPE   &kp MINUS       &kp GT      &kp FSLH   &kp NUBS     &kp DOT    &kp STAR    &kp  &kp  &kp  &trans  &kp DELETE      &kp LC(LEFT_SHIFT)  &kp           &kp           &trans
+&kp AT     &kp AMPS   &kp LBKT   &kp RBKT        &kp PLUS               &kp PERCENT  &kp COLON  &kp SEMI    &kp  &kp  &kp          &trans          &trans              &trans        &trans        &trans
             >;
         };
 
